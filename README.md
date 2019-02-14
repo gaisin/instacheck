@@ -20,8 +20,8 @@ pip install -r requirements.txt
 Firstly, you need an Insatgram account. Put username and password to a .env file, check ```.env_example``` as example. Better not use you personal account, since it can be banned. After finishing with an account, you can run a script.  
   
 Script has two required parameters: 
-1. Link to the post, i.e. https://www.instagram.com/p/Bt28gc1hMCA/
-2. Author's username, i.e. lauravevere
+1. Link to the post, e.g. https://www.instagram.com/p/Bt28gc1hMCA/
+2. Author's username, e.g. lauravevere
 ```
 $ python main.py https://www.instagram.com/p/Bt28gc1hMCA/ lauravevere
 python main.py https://www.insta
