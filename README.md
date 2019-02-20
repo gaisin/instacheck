@@ -1,10 +1,10 @@
-# Instacheck: fair instagram giveaways random winner finder
+# Instacheck: fair Instagram giveaways random winner finder
 
-This script will help you to fairly find winner in giveaways. Giveaways - instagram lotterys with certain conditions. Usually participants have to  
+This script will help you to fairly find winner in giveaways. Giveaways — instagram lotterys with certain conditions. Usually participants have to  
 1. tag two of their friends in post's comment
 2. like the post
 3. subscribe to giveaway's author  
-Script is selecting all users, who have met the conditions and select one random user from them. Of course, it select's only unique users, so if someone will post multiple comments, he'll have same chances as if he posted one.
+Script is selecting all users, who have met the conditions and select one random user from them. Of course, it select's only unique users, so if someone will post multiple comments, he will have same chances as if he posted one.
 
 ### How to install
 
@@ -20,8 +20,8 @@ pip install -r requirements.txt
 Firstly, you need an Insatgram account. Put username and password to a .env file, check ```.env_example``` as example. Better not use you personal account, since it can be banned. After finishing with an account, you can run a script.  
   
 Script has two required parameters: 
-1. Link to the post, i.e. https://www.instagram.com/p/Bt28gc1hMCA/
-2. Author's username, i.e. lauravevere
+1. Link to the post, e.g. https://www.instagram.com/p/Bt28gc1hMCA/
+2. Author's username, e.g. lauravevere
 ```
 $ python main.py https://www.instagram.com/p/Bt28gc1hMCA/ lauravevere
 python main.py https://www.insta
