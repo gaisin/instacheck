@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 ### How to use
 
-Firstly, you need an Insatgram account. Put username and password to a .env file, check ```.env_example``` as example. Better not use you personal account, since it can be banned. After finishing with an account, you can run a script.  
+Firstly, you need an Instagram account. Put username and password to a .env file, check ```.env_example``` as example. Better not use you personal account, since it can be banned. After finishing with an account, you can run a script.  
   
 Script has two required parameters: 
 1. Link to the post, e.g. https://www.instagram.com/p/Bt28gc1hMCA/
