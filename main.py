@@ -28,8 +28,8 @@ def is_user_exists(username, bot):
 def get_liked_users(media_id, users, bot):
     liked_users = []
     likers = bot.get_media_likers(media_id)
-    for user in users:
-        if user[0] in likers:
+    for user_id, username in users:
+        if user_id in likers:
             liked_users.append(user)
     return liked_users
 
@@ -37,8 +37,8 @@ def get_liked_users(media_id, users, bot):
 def get_followed_users(username, users, bot):
     followed_users = []
     followers = bot.get_user_followers(username)
-    for user in users:
-        if user[0] in followers:
+    for user_id, username in users:
+        if user_id in followers:
             followed_users.append(user)
     return followed_users
 
