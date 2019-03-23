@@ -27,20 +27,14 @@ def is_user_exists(username, bot):
 
 
 def get_liked_users(media_id, users, bot):
-    liked_users = []
     likers = bot.get_media_likers(media_id)
-    for user_id, username in users:
-        if user_id in likers:
-            liked_users.append(user)
+    liked_users = [user_id for user_id, username in users if user_id in likers]
     return liked_users
 
 
 def get_followed_users(username, users, bot):
-    followed_users = []
     followers = bot.get_user_followers(username)
-    for user_id, username in users:
-        if user_id in followers:
-            followed_users.append(user)
+    followed_users = [user_id for user_id, username in users if user_id in followers]
     return followed_users
 
 
