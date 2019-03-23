@@ -6,9 +6,11 @@ from dotenv import load_dotenv
 import argparse
 
 
-# function gets everything, that looks like a nickname
-# found nickname can be checked if it's a real one with function "is_user_exists"
 def get_tagged_users(comments, bot):
+    ''' 
+    function gets everything, that looks like a nickname
+    found nickname can be checked if it's a real one with function "is_user_exists"
+    '''
     mask = "@([a-zA-Z0-9._]{1,100})"
     tagged_users = []
     for comment in comments:
