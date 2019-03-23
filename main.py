@@ -21,10 +21,7 @@ def get_tagged_users(comments, bot):
 
 def is_user_exists(username, bot):
     user_id = bot.get_user_id_from_username(username)
-    if user_id is None:
-        return False
-    else:
-        return True
+    return user_id is not None
 
 
 def get_liked_users(media_id, users, bot):
